@@ -7,6 +7,7 @@ const heroesRoutes = require("./routes/heroes");
 
 app.use(morgan("tiny"));
 app.use(cors());
+app.use(express.json());
 
 app.use("/heroes", heroesRoutes);
 
